@@ -1,0 +1,685 @@
+            @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@400;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Monserrat', serif;
+            }
+            /* variables*/
+            
+             :root {
+                --melon: #FFA69E;
+                --arena: #FAF3DD;
+                --menta: #B8F2E6;
+                --violeta: #ae95cf;
+                --azul: #5E6472;
+            }
+            /* letras*/
+            
+            h1,
+            h2,
+            h3 {
+                font-family: 'Lora';
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            p {
+                padding: auto;
+            }
+            /* clases*/
+            
+            .item {
+                background-color: var(--melon);
+                color: var(--azul);
+            }
+            
+            .medio {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                background-color: var(--melon);
+                grid-auto-flow: dense;
+                gap: 1rem;
+                width: 60%;
+                padding: 1rem;
+                position: relative;
+                top: -10vh;
+                left: 20%;
+            }
+            
+            .tablamontevideo h3,
+            .tablamontevideo p {
+                margin-top: 1rem;
+            }
+            
+            .tablamontevideo figure img {
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            body section:nth-of-type(2) {
+                background-color: var(--violeta);
+                padding: 1rem;
+            }
+            
+            body section:nth-of-type(2) h2 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            
+            .barrios p,
+            .barrios h3 {
+                margin-top: 1rem;
+            }
+            
+            .barrios figure img {
+                width: 100%;
+                object-fit: cover;
+            }
+            /*Header*/
+            
+            header {
+                text-align: center;
+            }
+            
+            header img,
+            nav img {
+                max-width: 50px;
+            }
+            
+            body {
+                background: rgb(174, 217, 224);
+                background: linear-gradient(0deg, rgba(174, 217, 224, 1) 0%, rgba(250, 243, 221, 1) 100%);
+            }
+            /*NAV*/
+            
+            nav ul {
+                list-style-type: none;
+                display: flex;
+            }
+            
+            nav ul li a,
+            nav ul li a:link {
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+                color: var(--violeta);
+                text-align: center;
+                padding: 1rem;
+                border-top: 3px solid var(--melon);
+            }
+            
+            nav ul li a:hover {
+                background-color: var(--azul);
+                color: var(--melon);
+            }
+            
+            p:last-child {
+                text-align: left;
+            }
+            
+            p>a,
+            p>a:link {
+                text-decoration: none;
+                display: inline-block;
+                width: 25%;
+                padding: 0.25rem;
+                text-align: center;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                color: var(--menta);
+                background-color: var(--melon);
+            }
+            
+            p>a:hover {
+                background-color: var(--azul);
+            }
+            
+            footer {
+                display: flex;
+                background-color: var(--arena);
+                padding: 1rem;
+                justify-content: space-between;
+            }
+            
+            footer figure {
+                display: inline-block;
+            }
+            
+            footer figure img {
+                max-width: 2rem;
+                margin-left: 1rem;
+            }
+            /* top */
+            
+            .top {
+                background: url(imagenes/montevideo.jpg) no-repeat center;
+                min-height: 90vh;
+                position: relative;
+            }
+            
+            .formulario {
+                background-color: var(--azul);
+            }
+            
+            .top article {
+                padding: 20%;
+                color: whitesmoke;
+            }
+            /* segundo */
+            
+            .montevideo {
+                min-height: 40vh;
+                background: url(imagenes/trama.jpg) center center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .museos {
+                padding: 0 1em 2em 1em;
+                display: grid;
+                column-gap: 1rem;
+            }
+            
+            .museos h2 {
+                padding: 1rem 0 1rem 0;
+                grid-row: 1 / 2;
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            
+            .museos h3 {
+                margin: 1rem;
+            }
+            
+            .museos figure img {
+                width: 100%;
+                object-fit: cover;
+                height: 40vh;
+            }
+            
+            .museos article p:last-child {
+                text-align: right;
+            }
+            
+            .museos article p:last-child>a,
+            .museos article p:last-child>a:link {
+                width: 40%;
+                margin-top: 20px;
+            }
+            
+            .turismo {
+                padding: 0 1em 2em 1em;
+                display: grid;
+                column-gap: 1rem;
+                row-gap: 1rem;
+            }
+            
+            .turismo h3 {
+                margin: 1rem;
+            }
+            
+            .turismo figure img {
+                width: 100%;
+                object-fit: cover;
+                height: 40vh;
+            }
+            /* tercer*/
+            
+            table {
+                border: 2px solid #FFFFFF;
+                width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+                display: block;
+            }
+            
+            table td,
+            table th {
+                border: 1px solid #FFFFFF;
+                padding: 3px 4px;
+            }
+            
+            table td:nth-child(even) {
+                background: #D6B8FF;
+            }
+            
+            table thead {
+                background: #FFFFFF;
+                border-bottom: 4px solid #333333;
+            }
+            
+            table thead th {
+                font-weight: bold;
+                color: #AE95CF;
+                text-align: center;
+            }
+            
+            .columna figure img {
+                object-fit: cover;
+                max-width: 100%;
+            }
+            
+            .uruguay {
+                padding: 0 1em 2em 1em;
+                display: grid;
+                column-gap: 1rem;
+            }
+            
+            .uruguay h2 {
+                text-align: center;
+            }
+            
+            .uruguay h3 {
+                margin: 1rem;
+            }
+            
+            .uruguay figure img {
+                width: 100%;
+                object-fit: cover;
+                height: 40vh;
+            }
+            
+            .uruguay ul li {
+                list-style-position: inside;
+            }
+            
+            @media screen and (min-width: 317px) {
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .menu div {
+                    flex: 1;
+                }
+                .menu div:first-of-type {
+                    display: inline-block;
+                }
+                .menu div img {
+                    max-width: 75px;
+                }
+                footer {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                footer p:last-child {
+                    text-align: center;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+                .top article,
+                .top article p {
+                    text-align: center;
+                }
+                .medio {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                }
+                .medio article:nth-of-type(3),
+                .medio article:nth-of-type(2) {
+                    display: none;
+                }
+                .tablamontevideo {
+                    display: grid;
+                    grid-template-columns: 1;
+                    grid-template-rows: (3, 1fr);
+                    grid-auto-flow: dense;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+                .tablamontevideo p {
+                    display: none;
+                }
+                .tablamontevideo article:nth-child(4),
+                .tablamontevideo article:nth-child(5),
+                .tablamontevideo article:nth-child(6) {
+                    display: none;
+                }
+                .barrios {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .barrios article:last-of-type {
+                    display: none;
+                }
+                .barrios div>p {
+                    display: none;
+                }
+                .flebarrios p:last-of-type {
+                    display: block;
+                }
+                .flexbox {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .flexbox div {
+                    flex: 1;
+                }
+                .flexbox figure img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .flexbox p {
+                    display: block;
+                }
+                .flexbox p:last-of-type {
+                    display: block;
+                }
+                .formulario {
+                    padding: 1rem;
+                }
+                .formulario h2 {
+                    padding-bottom: 1rem;
+                }
+                .formulario input,
+                .formulario select {
+                    width: 100%;
+                }
+                .formulario fieldset {
+                    border: 0px;
+                    display: flex;
+                }
+                .formulario textarea {
+                    min-width: 3rem;
+                    display: block;
+                    width: 100%;
+                }
+                /*segunda hoja*/
+                .museos {
+                    grid-template: 50px 1fr / repeat(2, 1fr);
+                }
+                .museos article:nth-of-type(3) {
+                    display: none;
+                }
+                .museos p,
+                .museos h3 {
+                    display: none;
+                }
+                .turismo {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+                .turismo h2 {
+                    text-align: center;
+                }
+                .turismo article:nth-child(1) {
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 3;
+                }
+                .turismo article>p,
+                .turismo article>h3 {
+                    display: none;
+                }
+                .turismo article:nth-child(5),
+                .turismo article:nth-child(6) {
+                    display: none;
+                }
+                /*tercera hoja*/
+                .flex {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .flex div {
+                    flex: 1;
+                    margin-bottom: 1rem;
+                }
+                .flex figure img {
+                    width: 100%;
+                    object-fit: cover
+                }
+                .imagen {
+                    display: none;
+                }
+                .columna {
+                    display: none;
+                }
+                .flex h3:last-of-type {
+                    display: none;
+                }
+                .uruguay {
+                    grid-template: 50px 1fr / repeat(2, 1fr);
+                }
+                .uruguay article:nth-of-type(3),
+                .uruguay article:nth-of-type(4) {
+                    display: none;
+                }
+                .uruguay p {
+                    display: none;
+                }
+                .uruguay h2 {
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 3;
+                }
+                .ultima {
+                    background-color: skyblue;
+                    min-height: 100%;
+                }
+                .ultima div img {
+                    animation: rotatacion 3s ease 1s infinite alternate;
+                    -webkit-animation: rotatacion 3s ease 1s infinite alternate;
+                    width: 100%;
+                    object-fit: cover
+                }
+                .ultima p,
+                .ultima a {
+                    display: none;
+                }
+                @keyframes rotatacion {
+                    from {
+                        transform: rotate(0);
+                    }
+                    to {
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                    }
+                }
+            }
+            
+            @media screen and (min-width: 768px) {
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .top article,
+                .top article p {
+                    text-align: left;
+                }
+                .medio {
+                    grid-template: 1fr / repeat(2, 1fr)
+                }
+                .medio article:nth-of-type(3) {
+                    display: none
+                }
+                .medio article:nth-of-type(2) {
+                    display: block;
+                }
+                .tablamontevideo {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr, 1fr;
+                    grid-auto-flow: dense;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+                .tablamontevideo article:nth-child(1) {
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+                .barrios article:nth-child(2) {
+                    display: block;
+                }
+                .flexbox p {
+                    display: block;
+                }
+                .block {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                }
+                /*segunda hoja*/
+                .museos {
+                    grid-template: 1fr / repeat(3, 1fr);
+                }
+                .turismo {
+                    grid-template-columns: repeat(3 1fr);
+                    grid-template-rows: repeat(3 1fr);
+                }
+                .flex div figure {
+                    flex: 2
+                }
+                .imagen {
+                    display: flex;
+                }
+                .flex .imagen div figure {
+                    flex: 1;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .flex>div {
+                    flex: 1
+                }
+                .segundo div {
+                    display: block;
+                }
+                .uruguay {
+                    padding: 0 1em 2em 1em;
+                    grid-template: 50px 1fr / repeat(3, 1fr);
+                    column-gap: 1rem;
+                }
+                .uruguay h2 {
+                    padding: 1rem 0 1rem 0;
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 4;
+                    text-align: center;
+                }
+                .uruguay article:nth-of-type(3),
+                .uruguay p {
+                    display: block;
+                }
+                .ultima {
+                    display: flex;
+                }
+                .ultima div h2 {
+                    flex: 1;
+                    text-align: center;
+                    margin-top: 40%;
+                    margin-bottom: 3rem;
+                }
+                .ultima p,
+                .ultima a {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            
+            @media screen and (min-width: 1027px) {
+                .menu {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                footer {
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+                .centrado {
+                    width: 80%;
+                    max-width: 1250px;
+                    margin: 0 auto;
+                }
+                .tablamontevideo {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-auto-flow: dense;
+                    gap: 1rem;
+                    padding: 1rem;
+                }
+                .tablamontevideo article:nth-child(1) {
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+                .tablamontevideo article:nth-child(2) {
+                    grid-row: 1/3;
+                }
+                .tablamontevideo p {
+                    display: block;
+                }
+                .tablamontevideo article:nth-child(4),
+                .tablamontevideo article:nth-child(5),
+                .tablamontevideo article:nth-child(6) {
+                    display: block;
+                }
+                .barrios {
+                    display: grid;
+                    grid-template: 1fr / repeat(3, 1fr);
+                    gap: 1rem;
+                }
+                .barrios article p {
+                    display: block;
+                }
+                .barrios article:nth-child(3) {
+                    display: block;
+                }
+                .flexbox {
+                    display: block
+                }
+                .barrios article:nth-of-type(2),
+                .barrios article:nth-of-type(3) {
+                    flex: 1;
+                }
+                .barrios article:last-of-type {
+                    display: flex;
+                }
+                .museos {
+                    grid-template: 50px 1fr / repeat(3, 1fr);
+                }
+                .museos p,
+                .museos article:nth-of-type(3) {
+                    display: block;
+                }
+                .turismo {
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                }
+                .turismo article:nth-child(1) {
+                    padding: 1rem 0 1rem 0;
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 5;
+                    text-align: center;
+                }
+                .turismo article>p,
+                .turismo article>h3 {
+                    display: block;
+                }
+                .turismo article:nth-child(5),
+                .turismo article:nth-child(6) {
+                    display: block;
+                }
+                .columna {
+                    display: flex;
+                    padding: 1rem;
+                    flex-direction: column;
+                }
+                .uruguay {
+                    padding: 0 1em 2em 1em;
+                    display: grid;
+                    grid-template: 50px 1fr / repeat(4, 1fr);
+                    column-gap: 1rem;
+                }
+                .uruguay h2 {
+                    padding: 1rem 0 1rem 0;
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 5;
+                    text-align: center;
+                }
+            }
